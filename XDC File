@@ -1,0 +1,17 @@
+ set_property PACKAGE_PIN C17 [get_ports mouse_clk]                        
+     set_property IOSTANDARD LVCMOS33 [get_ports mouse_clk]
+     set_property PULLUP true [get_ports mouse_clk]
+ set_property PACKAGE_PIN B17 [get_ports mouse_data]                    
+     set_property IOSTANDARD LVCMOS33 [get_ports mouse_data]    
+     set_property PULLUP true [get_ports mouse_data]
+# Clock signal
+set_property PACKAGE_PIN W5 [get_ports clk_100Mhz]       
+ set_property IOSTANDARD LVCMOS33 [get_ports clk_100Mhz]
+
+# ---- Debug byte on LEDs (LD0..LD7) ----
+set_property PACKAGE_PIN U16 [get_ports {LED}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {LED}]
+
+# (Alternatively, one line works too:)
+# set_property IOSTANDARD LVCMOS33 [get_ports {DBG[*]}]
+
